@@ -1,7 +1,7 @@
-import type { NextConfig } from "next";
+const nextConfig = {
+  // Remove swcMinify option as it's no longer needed in Next.js 15
+  reactStrictMode: true,
+  output: 'standalone'
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = nextConfig
